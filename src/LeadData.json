@@ -1,0 +1,45 @@
+{
+    "lead": {
+        "name": "Carlos Gómez",
+        "activities": [
+            {
+                "id": 1,
+                "type": "annotation",
+                "content": "Llamar para seguimiento.",
+                "date": "2024-08-21"
+            },
+            {
+                "id": 2,
+                "type": "annotation",
+                "content": "Enviar propuesta por correo.",
+                "date": "2024-08-22"
+            },
+            {
+                "id": 3,
+                "type": "appointment",
+                "title": "Reunión inicial",
+                "date": "2024-08-25",
+                "time": "10:00 AM"
+            },
+            {
+                "id": 4,
+                "type": "appointment",
+                "title": "Demo del producto",
+                "date": "2024-08-28",
+                "time": "02:00 PM"
+            },
+            {
+                "id": 5,
+                "type": "task",
+                "task": "Preparar la presentación de la demo.",
+                "dueDate": "2024-08-27"
+            },
+            {
+                "id": 6,
+                "type": "task",
+                "task": "Actualizar el CRM con los últimos datos.",
+                "dueDate": "2024-08-26"
+            }
+        ]
+    }
+}

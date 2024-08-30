@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-purple-300;
+    margin: 10px;
+    padding: 20px;
+  }
