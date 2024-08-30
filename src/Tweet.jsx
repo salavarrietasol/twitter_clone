@@ -35,6 +35,8 @@ const Tweet = ({ tweet }) => {
     const [comments, setComments] = useState({});
     const [commentInput, setCommentInput] = useState({});
     const [views, setViews] = useState({});
+    const [hora, setHora] = useState(new Date());
+    
 
     const handleLikeClick = () => {
         setLikes((prevLikes) => ({
@@ -69,6 +71,7 @@ const Tweet = ({ tweet }) => {
             [tweet.id]: (prevViews[tweet.id] || 0) + 1,
         }));
     };
+    
 
     return (
         <div key={tweet.id} className="relative max-w-md p-3 mx-auto mb-4 bg-white border border-gray-200 rounded-lg shadow-md">
@@ -82,7 +85,7 @@ const Tweet = ({ tweet }) => {
                             <ul role="list" class="divide-y divide-gray-100">
                                 <li class="flex justify-between gap-x-6 py-5">
                                     <div class="flex min-w-0 gap-x-4">
-                                        <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="img/fotoMia.jpeg" alt=""></img>
+                                        <img class="h-12 w-12 flex-none rounded-full bg-gray-50" src="/img/fotoMia.jpeg" alt=""></img>
                                         <div class="min-w-0 flex-auto">
                                             <p class="text-sm font-semibold leading-6 text-gray-900">Sol Salavarrieta</p>
                                             <p class="mt-1 truncate text-xs leading-5 text-gray-500">@esealatres</p>
@@ -92,7 +95,7 @@ const Tweet = ({ tweet }) => {
                             </ul>
                                 <div>
                                 <p className="text-sm text-gray-700">{tweet.content}</p>
-                                <p className="mt-1 text-xs text-gray-500">Fecha: {tweet.date}</p>
+                                <p className="mt-1 text-xs text-gray-500">Fecha: {hora.toLocaleTimeString()}</p>
                                 </div>                             
                             </div>
                             
